@@ -1,0 +1,107 @@
+
+
+ <div class="blog__item container py-5">
+        <div class="single__item">
+          <div class="top">
+            <img src="~/assets/boutiquePhotos/boutique-shop.jpg" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Trendy</h3>
+            <h4>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+        <div class="single__item">
+          <div class="top">
+            <img src="~/assets/boutiquePhotos/electronics.jpg" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Trendy</h3>
+            <h4>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+        <div class="single__item">
+          <div class="top">
+            <img src="~/assets/boutiquePhotos/wears.jpg" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Trendy</h3>
+            <h4>
+              Lorem Ispum is a placeholder text commomly used as a free text.
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+      </div>
+
+
+        .blog__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+
+    .single__item {
+      border-radius: 2.5rem;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      //   border: 1px solid red;
+
+      .top {
+        height: 45rem;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .bottom {
+        text-align: center;
+        padding: 3rem 0;
+
+        h3 {
+          color: #ff5e3a;
+          margin-bottom: 1rem;
+          font-size: 1.8rem;
+        }
+
+        h4 {
+          max-width: 50%;
+          margin: 0 auto 1rem;
+          font-size: 1.5rem;
+          line-height: 1.5;
+        }
+
+        span {
+          color: #909090;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+
+
+
+@media (max-width: 1600px) {
+  .blog {
+    .blog__item {
+      .single__item {
+        .top {
+          height: 30rem;
+        }
+        .bottom {
+          h4 {
+            max-width: 85%;
+          }
+        }
+      }
+    }
+  }
+}
